@@ -23,6 +23,6 @@ urlpatterns = [
     path('', home_page),
     path('contact/', contact_page),
     path('about/', about_page),
-    path('blog-new', blog_post_create_view),
+    path('blog-new/', blog_post_create_view),
     path('blog/', include('blog.urls')),
 ]

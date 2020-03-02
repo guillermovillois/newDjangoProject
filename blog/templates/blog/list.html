@@ -5,7 +5,7 @@
 {% for object in object_list %}
     <div>
 
-    <li>{{ object.title }}</li>
+    <li><a href='{{ object.get_absolute_url }}'>{{ object.title }}</a></li>
 </div>
     <!-- <p>{{ object.content }}</p> -->
 {% endfor %}
