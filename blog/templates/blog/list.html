@@ -3,11 +3,7 @@
 {% block body %}
 
 {% for object in object_list %}
-    <div>
-
-    <li><a href='{{ object.get_absolute_url }}'>{{ object.title }}</a></li>
-</div>
-    <!-- <p>{{ object.content }}</p> -->
+    {% include 'blog/list-inline.html' with blog_post=object  %}
 {% endfor %}
 
 {% endblock %}
